@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LastPhoneView" customModuleProvider="target">
+            <connections>
+                <outlet property="phoneLabel" destination="Zuq-uF-oR6" id="aOM-qp-YBD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8dA-qU-RN9">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfJ-BH-sV6" customClass="ACBackgroundView" customModule="alfa_cash" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wZa-u6-o1E" customClass="SubtitleNoFontLabel" customModuleProvider="target">
+                            <rect key="frame" x="188" y="37" width="38.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <color key="textColor" red="0.1843137255" green="0.18039215689999999" blue="0.18039215689999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="TOPUP_LAST_USED_SENT"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMl-C2-R0T" customClass="BlueButton" customModule="alfa_cash" customModuleProvider="target">
+                            <rect key="frame" x="27" y="101" width="360" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="58" id="Ae4-Zu-MQO"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="TOPUP_USE_SAME_NUMBER"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="usePhoneAction:" destination="-1" eventType="touchUpInside" id="qJS-LU-5BH"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zuq-uF-oR6" customClass="TitleNoFontLabel" customModuleProvider="target">
+                            <rect key="frame" x="188" y="63" width="38.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <color key="textColor" name="kText47Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV8-Im-plU" customClass="GreyButton" customModuleProvider="target">
+                            <rect key="frame" x="27" y="159" width="360" height="58"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="NO_THANK_YOU"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="Wmh-LO-DdV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Zuq-uF-oR6" firstAttribute="top" secondItem="wZa-u6-o1E" secondAttribute="bottom" constant="8" id="JJj-vV-vWQ"/>
+                        <constraint firstItem="fV8-Im-plU" firstAttribute="leading" secondItem="zMl-C2-R0T" secondAttribute="leading" id="aJO-jh-cTs"/>
+                        <constraint firstItem="zMl-C2-R0T" firstAttribute="top" secondItem="Zuq-uF-oR6" secondAttribute="bottom" constant="20" id="ao2-YO-7fa"/>
+                        <constraint firstAttribute="trailing" secondItem="zMl-C2-R0T" secondAttribute="trailing" constant="27" id="awJ-Eq-RvY"/>
+                        <constraint firstItem="wZa-u6-o1E" firstAttribute="centerX" secondItem="pfJ-BH-sV6" secondAttribute="centerX" id="htR-ox-A6H"/>
+                        <constraint firstItem="zMl-C2-R0T" firstAttribute="leading" secondItem="pfJ-BH-sV6" secondAttribute="leading" constant="27" id="kqD-Wf-i7M"/>
+                        <constraint firstItem="fV8-Im-plU" firstAttribute="height" secondItem="zMl-C2-R0T" secondAttribute="height" id="lDW-y2-0J8"/>
+                        <constraint firstItem="fV8-Im-plU" firstAttribute="trailing" secondItem="zMl-C2-R0T" secondAttribute="trailing" id="mm4-vD-kK4"/>
+                        <constraint firstItem="fV8-Im-plU" firstAttribute="top" secondItem="zMl-C2-R0T" secondAttribute="bottom" id="ppc-DK-qGW"/>
+                        <constraint firstItem="wZa-u6-o1E" firstAttribute="top" secondItem="pfJ-BH-sV6" secondAttribute="top" constant="37" id="qXV-UX-Yih"/>
+                        <constraint firstItem="Zuq-uF-oR6" firstAttribute="centerX" secondItem="pfJ-BH-sV6" secondAttribute="centerX" id="vFK-2n-bsC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pfJ-BH-sV6" secondAttribute="bottom" id="2a5-f1-70o"/>
+                <constraint firstItem="wPZ-bN-FUM" firstAttribute="trailing" secondItem="pfJ-BH-sV6" secondAttribute="trailing" id="2jo-9Q-9sL"/>
+                <constraint firstItem="pfJ-BH-sV6" firstAttribute="leading" secondItem="wPZ-bN-FUM" secondAttribute="leading" id="NGk-8e-gDK"/>
+                <constraint firstItem="pfJ-BH-sV6" firstAttribute="top" secondItem="8dA-qU-RN9" secondAttribute="top" id="ezI-fo-bXu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="wPZ-bN-FUM"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-100.11160714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="kText47Color">
+            <color red="0.18431372549019609" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

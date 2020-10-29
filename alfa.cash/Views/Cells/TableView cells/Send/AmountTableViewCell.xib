@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AmountTableViewCell" rowHeight="95" id="1H1-AR-NfQ" customClass="AmountTableViewCell" customModule="alfa_cash" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1H1-AR-NfQ" id="K4V-DJ-uAe">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcA-Vi-sYw" customClass="SubtitleLabel" customModule="alfa_cash" customModuleProvider="target">
+                        <rect key="frame" x="20" y="17" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.1843137255" green="0.18039215689999999" blue="0.18039215689999999" alpha="0.40389554789999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="AMOUNT"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMD-HW-Gx7" customClass="TagView" customModule="alfa_cash" customModuleProvider="target">
+                        <rect key="frame" x="305" y="42" width="42" height="22"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ln8-Sl-O7A" customClass="TagLabel" customModule="alfa_cash" customModuleProvider="target">
+                                <rect key="frame" x="11" y="7" width="20" height="8.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="7"/>
+                                <color key="textColor" name="kGreenTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="kLightGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="F8K-IZ-WAK"/>
+                            <constraint firstAttribute="width" constant="42" id="HmY-xh-gw6"/>
+                            <constraint firstItem="Ln8-Sl-O7A" firstAttribute="centerX" secondItem="SMD-HW-Gx7" secondAttribute="centerX" id="cwy-Gr-jei"/>
+                            <constraint firstItem="Ln8-Sl-O7A" firstAttribute="centerY" secondItem="SMD-HW-Gx7" secondAttribute="centerY" id="mog-NB-b2J"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGf-FB-WtG" customClass="TitleNoFontLabel" customModule="alfa_cash" customModuleProvider="target">
+                        <rect key="frame" x="20" y="36" width="265" height="34"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txh-xt-eA6" customClass="SeparatorView" customModule="alfa_cash" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="94" width="384" height="1"/>
+                        <color key="backgroundColor" name="kTextFieldPlacehilderColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hTZ-se-QMo"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-white" translatesAutoresizingMaskIntoConstraints="NO" id="Gwb-e9-d2X">
+                        <rect key="frame" x="362" y="49.5" width="4" height="7"/>
+                        <color key="tintColor" name="kTintColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="CH8-yZ-BSU"/>
+                            <constraint firstAttribute="width" constant="4" id="uUy-T1-2Sn"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="txh-xt-eA6" secondAttribute="trailing" id="1ZQ-Tm-7bC"/>
+                    <constraint firstItem="SMD-HW-Gx7" firstAttribute="centerY" secondItem="uGf-FB-WtG" secondAttribute="centerY" id="2gl-Re-UyL"/>
+                    <constraint firstItem="Gwb-e9-d2X" firstAttribute="centerY" secondItem="SMD-HW-Gx7" secondAttribute="centerY" id="Cpg-vx-dLB"/>
+                    <constraint firstItem="txh-xt-eA6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uGf-FB-WtG" secondAttribute="bottom" constant="10" id="Lf6-XL-j64"/>
+                    <constraint firstAttribute="bottom" secondItem="txh-xt-eA6" secondAttribute="bottom" id="MT5-zJ-Jc6"/>
+                    <constraint firstAttribute="trailing" secondItem="Gwb-e9-d2X" secondAttribute="trailing" constant="18" id="P9h-om-HZ5"/>
+                    <constraint firstItem="TcA-Vi-sYw" firstAttribute="leading" secondItem="K4V-DJ-uAe" secondAttribute="leading" constant="20" id="PdS-BU-2BI"/>
+                    <constraint firstItem="TcA-Vi-sYw" firstAttribute="top" secondItem="K4V-DJ-uAe" secondAttribute="top" constant="17" id="UhI-4g-qps"/>
+                    <constraint firstItem="uGf-FB-WtG" firstAttribute="leading" secondItem="K4V-DJ-uAe" secondAttribute="leading" constant="20" id="UqV-Ki-E6c"/>
+                    <constraint firstItem="SMD-HW-Gx7" firstAttribute="leading" secondItem="uGf-FB-WtG" secondAttribute="trailing" constant="20" id="WDv-IH-KBW"/>
+                    <constraint firstItem="txh-xt-eA6" firstAttribute="leading" secondItem="K4V-DJ-uAe" secondAttribute="leading" id="qhc-kY-fld"/>
+                    <constraint firstAttribute="trailing" secondItem="SMD-HW-Gx7" secondAttribute="trailing" constant="37" id="s8g-8N-e5h"/>
+                    <constraint firstItem="uGf-FB-WtG" firstAttribute="top" secondItem="TcA-Vi-sYw" secondAttribute="bottom" constant="2" id="vLz-Tb-zfS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="ee9-Lx-lOD"/>
+            <connections>
+                <outlet property="amountLabel" destination="uGf-FB-WtG" id="eSS-OV-Irc"/>
+                <outlet property="currencyLabel" destination="Ln8-Sl-O7A" id="oh0-Dl-2s6"/>
+                <outlet property="titleLabel" destination="TcA-Vi-sYw" id="x39-Ch-O5l"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="110.82589285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow-white" width="5" height="8"/>
+        <namedColor name="kGreenTextColor">
+            <color red="0.32156862745098042" green="0.49803921568627452" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="kLightGreenColor">
+            <color red="0.63529411764705879" green="0.94901960784313721" blue="0.56862745098039214" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="kTextFieldPlacehilderColor">
+            <color red="0.8901960784313725" green="0.92549019607843142" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="kTintColor">
+            <color red="0.66666666666666663" green="0.76470588235294112" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

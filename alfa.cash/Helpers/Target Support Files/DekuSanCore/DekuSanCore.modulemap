@@ -1,0 +1,6 @@
+framework module DekuSanCore {
+  umbrella header "DekuSanCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

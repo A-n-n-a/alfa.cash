@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="SpeedTableViewCell" customModule="alfa_cash" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcQ-gH-hoI" customClass="BorderedThemedView" customModule="alfa_cash" customModuleProvider="target">
+                        <rect key="frame" x="20" y="5" width="312" height="85"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="tpk-4v-HCC">
+                                <rect key="frame" x="20" y="25" width="272" height="35"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="gfv-ww-ogw">
+                                        <rect key="frame" x="0.0" y="0.0" width="249" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnA-qH-Gpc" customClass="TitleLabel" customModule="alfa_cash" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="249" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="Alu-El-YMM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <color key="textColor" name="kText47Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ri-IM-YVW" customClass="SubtitleLabel" customModule="alfa_cash" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="19" width="249" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <color key="textColor" name="kSubtitleColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Cxh-NH-gI1"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1e-da-W45">
+                                        <rect key="frame" x="252" y="0.0" width="20" height="35"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark_blue" translatesAutoresizingMaskIntoConstraints="NO" id="4ww-YO-ada">
+                                                <rect key="frame" x="0.0" y="7.5" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="Eng-nw-bnb"/>
+                                                    <constraint firstAttribute="height" constant="20" id="XXo-9M-Zq6"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="4ww-YO-ada" firstAttribute="centerX" secondItem="T1e-da-W45" secondAttribute="centerX" id="0Fh-s3-dlW"/>
+                                            <constraint firstItem="4ww-YO-ada" firstAttribute="centerY" secondItem="T1e-da-W45" secondAttribute="centerY" id="VMf-R1-M7n"/>
+                                            <constraint firstAttribute="width" constant="20" id="v6U-Au-PS1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="kTextFieldBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tpk-4v-HCC" firstAttribute="leading" secondItem="IcQ-gH-hoI" secondAttribute="leading" constant="20" id="RUy-NP-6Uw"/>
+                            <constraint firstItem="tpk-4v-HCC" firstAttribute="centerY" secondItem="IcQ-gH-hoI" secondAttribute="centerY" id="mbq-nt-7wb"/>
+                            <constraint firstAttribute="trailing" secondItem="tpk-4v-HCC" secondAttribute="trailing" constant="20" id="nQW-Sg-aeC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="IcQ-gH-hoI" secondAttribute="bottom" constant="5" id="7KW-vQ-8gs"/>
+                    <constraint firstItem="IcQ-gH-hoI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="MKz-nA-hVO"/>
+                    <constraint firstAttribute="trailing" secondItem="IcQ-gH-hoI" secondAttribute="trailing" constant="20" id="OHj-4j-CX7"/>
+                    <constraint firstItem="IcQ-gH-hoI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lip-Rk-Vrp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="blueContainer" destination="IcQ-gH-hoI" id="JUt-Uz-r8f"/>
+                <outlet property="checkmarkContainer" destination="4ww-YO-ada" id="lzQ-fY-aW5"/>
+                <outlet property="subtitleLabel" destination="3ri-IM-YVW" id="2Gn-zk-PPL"/>
+                <outlet property="titleLabel" destination="tnA-qH-Gpc" id="kxl-FI-as8"/>
+            </connections>
+            <point key="canvasLocation" x="160.86956521739131" y="108.81696428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark_blue" width="20" height="20"/>
+        <namedColor name="kSubtitleColor">
+            <color red="0.18431372549019609" green="0.1803921568627451" blue="0.1803921568627451" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="kText47Color">
+            <color red="0.18431372549019609" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="kTextFieldBackgroundColor">
+            <color red="0.95294117647058818" green="0.97647058823529409" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

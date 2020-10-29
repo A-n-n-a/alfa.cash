@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UsernameView" customModule="alfa_cash" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="Lbk-rX-MEo" id="BEm-e5-5Zt"/>
+                <outlet property="checkingLabel" destination="KrI-oe-hfz" id="kQZ-FH-c9h"/>
+                <outlet property="checkmark" destination="k2f-2a-Uus" id="dT4-Ux-7qd"/>
+                <outlet property="copyLabel" destination="wZa-u6-o1E" id="Xno-3H-GWr"/>
+                <outlet property="nextButton" destination="zMl-C2-R0T" id="LE9-xo-cHc"/>
+                <outlet property="usernameTextField" destination="AJQ-8j-acI" id="sC8-bh-vCK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8dA-qU-RN9">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfJ-BH-sV6" customClass="ACBackgroundView" customModule="alfa_cash" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zuq-uF-oR6" customClass="TitleLabel" customModule="alfa_cash" customModuleProvider="target">
+                            <rect key="frame" x="27" y="27" width="36" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" name="kText47Color"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="CHANGE_USERNAME"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wZa-u6-o1E" customClass="SubtitleLabel" customModule="alfa_cash" customModuleProvider="target">
+                            <rect key="frame" x="353" y="27" width="34" height="16"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                            <color key="textColor" red="0.1843137255" green="0.18039215689999999" blue="0.18039215689999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="COPY"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV8-Im-plU">
+                            <rect key="frame" x="320" y="15" width="100" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Mio-oW-cPa"/>
+                                <constraint firstAttribute="width" constant="100" id="kvW-MR-lTL"/>
+                            </constraints>
+                            <connections>
+                                <action selector="copyAction:" destination="-1" eventType="touchUpInside" id="dSv-9A-LRE"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1g-Hr-Jad" customClass="SeparatorView" customModule="alfa_cash" customModuleProvider="target">
+                            <rect key="frame" x="19" y="48" width="376" height="1"/>
+                            <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Hj1-jG-lAZ"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJQ-8j-acI" customClass="BorderedTextField" customModule="alfa_cash" customModuleProvider="target">
+                            <rect key="frame" x="20" y="70" width="374" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="QP7-Zw-ubg"/>
+                            </constraints>
+                            <color key="textColor" name="kText47Color"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="USERNAME"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.corner.radius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="unI-kh-7dX">
+                            <rect key="frame" x="20" y="125" width="0.0" height="14"/>
+                            <subviews>
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark_blue" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k2f-2a-Uus">
+                                    <rect key="frame" x="0.0" y="0.0" width="14" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="VaY-MW-kPd"/>
+                                        <constraint firstAttribute="width" constant="14" id="sSE-QH-tgG"/>
+                                    </constraints>
+                                </imageView>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrI-oe-hfz" customClass="TitleLabel" customModule="alfa_cash" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Aql-fZ-GZz"/>
+                                        <constraint firstAttribute="height" constant="14" id="KZm-s4-Zpa"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" name="kText47Color"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="UeD-um-sFf"/>
+                            </constraints>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMl-C2-R0T" customClass="BlueButton" customModule="alfa_cash" customModuleProvider="target">
+                            <rect key="frame" x="27" y="192" width="360" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="58" id="Ae4-Zu-MQO"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="CONFIRM"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="confirm:" destination="-1" eventType="touchUpInside" id="Fbi-lo-ZBU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="j1g-Hr-Jad" firstAttribute="leading" secondItem="pfJ-BH-sV6" secondAttribute="leading" constant="19" id="4Zr-wq-spC"/>
+                        <constraint firstItem="Zuq-uF-oR6" firstAttribute="leading" secondItem="pfJ-BH-sV6" secondAttribute="leading" constant="27" id="5k5-kY-K1p"/>
+                        <constraint firstItem="Zuq-uF-oR6" firstAttribute="top" secondItem="pfJ-BH-sV6" secondAttribute="top" constant="27" id="AVm-JY-Z5A"/>
+                        <constraint firstItem="unI-kh-7dX" firstAttribute="leading" secondItem="pfJ-BH-sV6" secondAttribute="leading" constant="20" id="BQu-AX-Nvk"/>
+                        <constraint firstAttribute="trailing" secondItem="j1g-Hr-Jad" secondAttribute="trailing" constant="19" id="Bdn-sh-Ysc"/>
+                        <constraint firstItem="fV8-Im-plU" firstAttribute="centerX" secondItem="wZa-u6-o1E" secondAttribute="centerX" id="Sy6-Nt-4FQ"/>
+                        <constraint firstItem="AJQ-8j-acI" firstAttribute="top" secondItem="fV8-Im-plU" secondAttribute="bottom" constant="15" id="Ulg-FE-ufb"/>
+                        <constraint firstAttribute="bottom" secondItem="zMl-C2-R0T" secondAttribute="bottom" constant="50" id="X1h-ZK-KO5"/>
+                        <constraint firstAttribute="trailing" secondItem="zMl-C2-R0T" secondAttribute="trailing" constant="27" id="awJ-Eq-RvY"/>
+                        <constraint firstItem="AJQ-8j-acI" firstAttribute="leading" secondItem="pfJ-BH-sV6" secondAttribute="leading" constant="20" id="cI7-xW-iK8"/>
+                        <constraint firstAttribute="trailing" secondItem="wZa-u6-o1E" secondAttribute="trailing" constant="27" id="dUs-zt-l0j"/>
+                        <constraint firstItem="j1g-Hr-Jad" firstAttribute="top" secondItem="Zuq-uF-oR6" secondAttribute="bottom" constant="4" id="eZk-lZ-Nq3"/>
+                        <constraint firstItem="wZa-u6-o1E" firstAttribute="top" secondItem="Zuq-uF-oR6" secondAttribute="top" id="j7i-er-sy5"/>
+                        <constraint firstItem="fV8-Im-plU" firstAttribute="centerY" secondItem="wZa-u6-o1E" secondAttribute="centerY" id="jvc-gS-q18"/>
+                        <constraint firstItem="zMl-C2-R0T" firstAttribute="leading" secondItem="pfJ-BH-sV6" secondAttribute="leading" constant="27" id="kqD-Wf-i7M"/>
+                        <constraint firstItem="unI-kh-7dX" firstAttribute="top" secondItem="AJQ-8j-acI" secondAttribute="bottom" constant="15" id="sXA-az-Afx"/>
+                        <constraint firstAttribute="trailing" secondItem="AJQ-8j-acI" secondAttribute="trailing" constant="20" id="ujk-eu-A29"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Lbk-rX-MEo">
+                    <rect key="frame" x="197" y="140" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pfJ-BH-sV6" secondAttribute="bottom" id="2a5-f1-70o"/>
+                <constraint firstItem="wPZ-bN-FUM" firstAttribute="trailing" secondItem="pfJ-BH-sV6" secondAttribute="trailing" id="2jo-9Q-9sL"/>
+                <constraint firstItem="Lbk-rX-MEo" firstAttribute="centerY" secondItem="8dA-qU-RN9" secondAttribute="centerY" id="93l-ke-Y7d"/>
+                <constraint firstItem="pfJ-BH-sV6" firstAttribute="leading" secondItem="wPZ-bN-FUM" secondAttribute="leading" id="NGk-8e-gDK"/>
+                <constraint firstItem="Lbk-rX-MEo" firstAttribute="centerX" secondItem="8dA-qU-RN9" secondAttribute="centerX" id="TTV-XJ-EOM"/>
+                <constraint firstItem="pfJ-BH-sV6" firstAttribute="top" secondItem="8dA-qU-RN9" secondAttribute="top" id="ezI-fo-bXu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="wPZ-bN-FUM"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-100.11160714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark_blue" width="20" height="20"/>
+        <namedColor name="kText47Color">
+            <color red="0.18431372549019609" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

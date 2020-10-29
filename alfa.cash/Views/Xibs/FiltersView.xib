@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiltersView" customModule="alfa_cash" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="Rdz-eg-mFX" id="NMo-Tg-Tat"/>
+                <outlet property="containerView" destination="0aN-A0-fNL" id="62R-gO-ezq"/>
+                <outlet property="resetTitle" destination="7vv-oR-ZmG" id="RJX-4T-HYQ"/>
+                <outlet property="subtitleLabel" destination="7vv-oR-ZmG" id="W01-rD-4bB"/>
+                <outlet property="tableView" destination="fey-rD-ggx" id="2m2-cM-qwH"/>
+                <outlet property="titleLabel" destination="GIN-yq-jpJ" id="k41-a5-qnh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0aN-A0-fNL" customClass="ACBackgroundView" customModule="alfa_cash" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GIN-yq-jpJ" customClass="TitleNoFontLabel" customModule="alfa_cash" customModuleProvider="target">
+                            <rect key="frame" x="27" y="27" width="151" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" name="kText47Color"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="FILTER"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7vv-oR-ZmG" customClass="ACLabel" customModule="alfa_cash" customModuleProvider="target">
+                            <rect key="frame" x="273.5" y="27" width="113.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                            <color key="textColor" red="0.18431372549019609" green="0.1803921568627451" blue="0.1803921568627451" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="RESET"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXk-Da-CCw">
+                            <rect key="frame" x="280.5" y="15" width="100" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="mps-lY-SXu"/>
+                                <constraint firstAttribute="height" constant="40" id="xiZ-Mp-Mwi"/>
+                            </constraints>
+                            <connections>
+                                <action selector="resetFilters:" destination="-1" eventType="touchUpInside" id="aFd-Dr-kEY"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNK-VC-qt3" customClass="SeparatorView" customModule="alfa_cash" customModuleProvider="target">
+                            <rect key="frame" x="19" y="52.5" width="376" height="1"/>
+                            <color key="backgroundColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ZmV-aK-Ctq"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="fey-rD-ggx">
+                            <rect key="frame" x="0.0" y="63.5" width="414" height="714.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxN-kR-c3z" customClass="BlueButton" customModule="alfa_cash" customModuleProvider="target">
+                            <rect key="frame" x="27" y="788" width="360" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="58" id="V6X-Q7-8xe"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="APPLY_FILTER"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="applyFilters:" destination="-1" eventType="touchUpInside" id="brk-c4-16E"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="fey-rD-ggx" firstAttribute="top" secondItem="aXk-Da-CCw" secondAttribute="bottom" constant="8.5" id="3cF-Vb-Ext"/>
+                        <constraint firstItem="7vv-oR-ZmG" firstAttribute="top" secondItem="GIN-yq-jpJ" secondAttribute="top" id="4ZR-NP-H3W"/>
+                        <constraint firstAttribute="trailing" secondItem="jNK-VC-qt3" secondAttribute="trailing" constant="19" id="63c-jC-y2i"/>
+                        <constraint firstItem="aXk-Da-CCw" firstAttribute="centerX" secondItem="7vv-oR-ZmG" secondAttribute="centerX" id="65W-mK-RlR"/>
+                        <constraint firstItem="GIN-yq-jpJ" firstAttribute="top" secondItem="0aN-A0-fNL" secondAttribute="top" constant="27" id="F0I-s8-QfS"/>
+                        <constraint firstAttribute="trailing" secondItem="UxN-kR-c3z" secondAttribute="trailing" constant="27" id="Ig2-mY-WLR"/>
+                        <constraint firstItem="jNK-VC-qt3" firstAttribute="top" secondItem="GIN-yq-jpJ" secondAttribute="bottom" constant="4" id="K3c-md-qrJ"/>
+                        <constraint firstItem="jNK-VC-qt3" firstAttribute="leading" secondItem="0aN-A0-fNL" secondAttribute="leading" constant="19" id="MgO-59-vpQ"/>
+                        <constraint firstItem="GIN-yq-jpJ" firstAttribute="leading" secondItem="0aN-A0-fNL" secondAttribute="leading" constant="27" id="S4z-p7-raz"/>
+                        <constraint firstAttribute="bottom" secondItem="UxN-kR-c3z" secondAttribute="bottom" constant="50" id="T2f-LX-sca"/>
+                        <constraint firstItem="fey-rD-ggx" firstAttribute="leading" secondItem="0aN-A0-fNL" secondAttribute="leading" id="VTg-Aw-nUi"/>
+                        <constraint firstItem="UxN-kR-c3z" firstAttribute="leading" secondItem="0aN-A0-fNL" secondAttribute="leading" constant="27" id="bLk-P2-gyW"/>
+                        <constraint firstItem="aXk-Da-CCw" firstAttribute="centerY" secondItem="7vv-oR-ZmG" secondAttribute="centerY" id="fZb-XN-m7r"/>
+                        <constraint firstAttribute="trailing" secondItem="7vv-oR-ZmG" secondAttribute="trailing" constant="27" id="jqY-zi-j1m"/>
+                        <constraint firstAttribute="trailing" secondItem="fey-rD-ggx" secondAttribute="trailing" id="mY6-95-abz"/>
+                        <constraint firstItem="UxN-kR-c3z" firstAttribute="top" secondItem="fey-rD-ggx" secondAttribute="bottom" constant="10" id="mnF-lf-luR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Rdz-eg-mFX">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Rdz-eg-mFX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BO1-hz-C4q"/>
+                <constraint firstItem="0aN-A0-fNL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YBv-xH-LS7"/>
+                <constraint firstAttribute="bottom" secondItem="0aN-A0-fNL" secondAttribute="bottom" id="bWN-0n-5xi"/>
+                <constraint firstItem="Rdz-eg-mFX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="i5V-fn-Fhb"/>
+                <constraint firstItem="0aN-A0-fNL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="n7k-N9-qff"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0aN-A0-fNL" secondAttribute="trailing" id="oMG-y6-LFa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="kText47Color">
+            <color red="0.18431372549019609" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CJz-Ww-AOd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set Language View Controller-->
+        <scene sceneID="yYC-JQ-wBt">
+            <objects>
+                <viewController id="CJz-Ww-AOd" customClass="SetLanguageViewController" customModule="alfa_cash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bmT-Sd-D0q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqY-3S-YhL" customClass="BlueButton" customModule="alfa_cash" customModuleProvider="target">
+                                <rect key="frame" x="19" y="787" width="376" height="56"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.52156862749999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="7WQ-te-eNI"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="CONTINUE"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="CJz-Ww-AOd" eventType="touchUpInside" id="qVh-tH-dej"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceh-P6-kpt" customClass="ACLabel" customModule="alfa_cash" customModuleProvider="target">
+                                <rect key="frame" x="20" y="109" width="121" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="CHOOSE_YOUR_LANGUAGE"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PQk-8t-YIM">
+                                <rect key="frame" x="0.0" y="133" width="414" height="195"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="kfL-aj-Hvn"/>
+                                </constraints>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CJz-Ww-AOd" id="zkn-Kh-qot"/>
+                                    <outlet property="delegate" destination="CJz-Ww-AOd" id="BwZ-66-OMA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.031372549020000001" green="0.1058823529" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ceh-P6-kpt" firstAttribute="leading" secondItem="91L-lB-sS8" secondAttribute="leading" constant="20" id="E7x-8v-dwX"/>
+                            <constraint firstItem="91L-lB-sS8" firstAttribute="trailing" secondItem="PQk-8t-YIM" secondAttribute="trailing" id="IHe-tT-mWh"/>
+                            <constraint firstItem="PQk-8t-YIM" firstAttribute="top" secondItem="ceh-P6-kpt" secondAttribute="bottom" constant="7" id="PhK-Mn-WLX"/>
+                            <constraint firstItem="91L-lB-sS8" firstAttribute="trailing" secondItem="cqY-3S-YhL" secondAttribute="trailing" constant="19" id="X7C-v8-JHv"/>
+                            <constraint firstItem="91L-lB-sS8" firstAttribute="bottom" secondItem="cqY-3S-YhL" secondAttribute="bottom" constant="19" id="dzr-MO-40Y"/>
+                            <constraint firstItem="ceh-P6-kpt" firstAttribute="top" secondItem="bmT-Sd-D0q" secondAttribute="top" constant="109" id="fNH-pa-rWj"/>
+                            <constraint firstItem="cqY-3S-YhL" firstAttribute="leading" secondItem="91L-lB-sS8" secondAttribute="leading" constant="19" id="z6n-2S-fEg"/>
+                            <constraint firstItem="PQk-8t-YIM" firstAttribute="leading" secondItem="91L-lB-sS8" secondAttribute="leading" id="zWT-Kr-66V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="91L-lB-sS8"/>
+                    </view>
+                    <connections>
+                        <outlet property="headerLabel" destination="ceh-P6-kpt" id="Sbd-PH-8KC"/>
+                        <outlet property="saveButton" destination="cqY-3S-YhL" id="OtT-sY-0fo"/>
+                        <outlet property="tableView" destination="PQk-8t-YIM" id="TBf-DA-hgm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWz-wy-k6z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="70"/>
+        </scene>
+    </scenes>
+</document>

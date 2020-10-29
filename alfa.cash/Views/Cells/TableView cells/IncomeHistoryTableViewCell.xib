@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IncomeHistoryTableViewCell" rowHeight="90" id="KGk-i7-Jjw" customClass="IncomeHistoryTableViewCell" customModule="alfa_cash" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDh-pN-cxI" customClass="TitleLabel" customModule="alfa_cash" customModuleProvider="target">
+                        <rect key="frame" x="39" y="36" width="38.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2U-rZ-1SH" customClass="TitleNoFontLabel" customModule="alfa_cash" customModuleProvider="target">
+                        <rect key="frame" x="225.5" y="35.5" width="40.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWm-tD-jE2" customClass="SeparatorView" customModule="alfa_cash" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="1"/>
+                        <color key="backgroundColor" name="kTextFieldPlacehilderColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="4Z5-Kz-W7K"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXK-Wb-6iF" customClass="SeparatorView" customModule="alfa_cash" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="89" width="357" height="1"/>
+                        <color key="backgroundColor" name="kTextFieldPlacehilderColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0N8-RT-cX0"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLW-RO-bjW">
+                        <rect key="frame" x="297" y="0.0" width="60" height="90"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="FZ2-9Z-6ta"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar_grey" translatesAutoresizingMaskIntoConstraints="NO" id="k2b-N1-SNf">
+                        <rect key="frame" x="316" y="37" width="17" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="3Vj-Re-6bO"/>
+                            <constraint firstAttribute="width" constant="17" id="SZE-oS-mid"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k2b-N1-SNf" firstAttribute="leading" secondItem="F2U-rZ-1SH" secondAttribute="trailing" constant="50" id="4Tt-wH-LKT"/>
+                    <constraint firstAttribute="trailing" secondItem="k2b-N1-SNf" secondAttribute="trailing" constant="24" id="4e7-R2-R6n"/>
+                    <constraint firstItem="lWm-tD-jE2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KPN-WT-xn0"/>
+                    <constraint firstAttribute="bottom" secondItem="vLW-RO-bjW" secondAttribute="bottom" id="LF6-xQ-TwR"/>
+                    <constraint firstItem="BDh-pN-cxI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MQo-bR-YW5"/>
+                    <constraint firstAttribute="bottom" secondItem="XXK-Wb-6iF" secondAttribute="bottom" id="T1A-LZ-APy"/>
+                    <constraint firstItem="F2U-rZ-1SH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UGw-dT-Krc"/>
+                    <constraint firstAttribute="trailing" secondItem="vLW-RO-bjW" secondAttribute="trailing" id="WEI-Qx-4m9"/>
+                    <constraint firstItem="XXK-Wb-6iF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fpe-No-XNb"/>
+                    <constraint firstItem="BDh-pN-cxI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="39" id="hVi-Gk-z3T"/>
+                    <constraint firstItem="vLW-RO-bjW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="k7e-bj-ZKd"/>
+                    <constraint firstItem="lWm-tD-jE2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kHO-Iz-jo1"/>
+                    <constraint firstItem="k2b-N1-SNf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wjK-7o-AAw"/>
+                    <constraint firstAttribute="trailing" secondItem="XXK-Wb-6iF" secondAttribute="trailing" id="yCl-7Q-0IZ"/>
+                    <constraint firstAttribute="trailing" secondItem="lWm-tD-jE2" secondAttribute="trailing" id="yZL-Hp-sPs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="F2U-rZ-1SH" id="28Z-HA-aU9"/>
+                <outlet property="blueView" destination="vLW-RO-bjW" id="AAy-cn-VyA"/>
+                <outlet property="calendarIcon" destination="k2b-N1-SNf" id="Qvt-ya-MRi"/>
+                <outlet property="nameLabel" destination="BDh-pN-cxI" id="Wc1-nO-jHh"/>
+                <outlet property="topSeparator" destination="lWm-tD-jE2" id="YvQ-My-0Th"/>
+            </connections>
+            <point key="canvasLocation" x="158.69565217391306" y="105.13392857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendar_grey" width="17" height="16"/>
+        <namedColor name="kTextFieldPlacehilderColor">
+            <color red="0.8901960784313725" green="0.92549019607843142" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

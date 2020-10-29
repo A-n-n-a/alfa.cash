@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="aktivgrotesk-medium.ttf">
+            <string>AktivGrotesk-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController storyboardIdentifier="AlfaCashLaunchScreen" id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="G1x-kR-atY">
+                                <rect key="frame" x="171" y="230" width="72" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="BQ6-0C-fqZ"/>
+                                    <constraint firstAttribute="width" constant="72" id="iMD-rA-ZNe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alfacash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQ9-8r-Sce">
+                                <rect key="frame" x="144.5" y="298" width="125.5" height="29.5"/>
+                                <fontDescription key="fontDescription" name="AktivGrotesk-Medium" family="Aktiv Grotesk" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.031372549019607843" green="0.10588235294117647" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hQ9-8r-Sce" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2pt-dE-Npm"/>
+                            <constraint firstItem="G1x-kR-atY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="U8g-s5-4pf"/>
+                            <constraint firstItem="G1x-kR-atY" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="230" id="Yxq-o8-Rzq"/>
+                            <constraint firstItem="hQ9-8r-Sce" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="298" id="pKt-P7-Dcc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="63" height="54"/>
+    </resources>
+</document>

@@ -1,0 +1,19 @@
+input_dir: AlfaCash
+output_dir: AlfaCash/Constants/Generated
+
+ib:
+  inputs: .
+  outputs:
+    - templateName: scenes-swift4
+      output: Storyboards Scenes.swift
+strings:
+  inputs: Resources/en.lproj/Localizable.strings
+  outputs:
+    templateName: structured-swift4
+    output: Strings.swift
+xcassets:
+  inputs:
+    - Resources/Assets.xcassets
+  outputs:
+    templateName: swift4
+    output: Assets.swift

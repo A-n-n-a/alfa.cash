@@ -1,0 +1,144 @@
+/* 
+  Localizable.strings
+  AlfaCash
+
+  Created by Anna Alimanova on 14.01.2020.
+  Copyright © 2020 Anna Alimanova. All rights reserved.
+*/
+
+//common
+
+"continue" = "Continue";
+"next" = "Next";
+"search" = "Search";
+
+//onboarding
+"onboarding_logo_title" = "alfacash";
+"onboarding_logo_subtitle" = "All your digital assets in your device";
+"onboarding_digit_title" = "All digital assets\nin your device";
+"onboarding_digit_subtitle" = "Easy and secure crypto wallet";
+"onboarding_coin_title" = "Over 100\nCoins & tokens";
+"onboarding_coin_subtitle" = "Decentralised exchanges & more";
+"onboarding_send_title" = "Send and\nReceive at ease";
+"onboarding_send_subtitle" = "Send or receive crypto coins\nwith alfacash username";
+"onboarding_signup_button" = "Create a New Wallet";
+"onboarding_login_button" = "Restore Wallet";
+
+//login
+"login_description" = "Sign in with a recovery phrase, you were given, when you created your previous wallet.";
+"login_placeholder" = "Enter Recovery Phrase";
+"login_mnemonic_mismatch" = "Wrong mnemonic format";
+
+//logout
+"logout_title" = "Before you sign out";
+"logout_subtitle" = "Back up you recovery phrase before you log out or you will be unable to access your wallets again";
+"logout_button" = "Sign Out";
+"logout_seed" = "Sign Out of Current Seedphrase";
+
+//set language
+"language_choose" = "Choose your language";
+"language_select" = "Select your language";
+"language_popular" = "Popular";
+"language_all" = "All Languages";
+
+"english" = "English";
+"russian" = "Russian";
+"chinese" = "Chinese";
+"spanish" = "Spanish";
+"hindi" = "Hindi";
+"arabic" = "Arabic";
+"portuguese" = "Portuguese";
+"japanese" = "Japanese";
+"turkish" = "Turkish";
+"french" = "French";
+"german" = "German";
+"italian" = "Italian";
+
+"otherLanguage" ="Other Language";
+
+// theme
+"theme_appearance" = "Appearance";
+"theme_choose" = "Choose your app skin";
+"theme_day" = "Day Mode";
+"theme_night" = "Night Mode";
+"theme_dark" = "True Dark Mode";
+
+//legal
+
+"legal_title" = "Legal";
+"legal_subtitle" = "Review carefully the Alfacash\nPrivacy Policy and Terms of Service";
+"legal_privacy" = "Privacy Policy";
+"legal_terms" = "Terms of Service";
+"legal_button" = "Accept and Agree";
+
+//username
+
+"username_title" = "Choose your username";
+"username_subtitle" = "This is how other Wallets and users can find you and send you payments.";
+"username_checking" = "Checking...";
+"username_available" = "Available!";
+"username_exists" = "Username exists";
+"username_next" = "Next";
+"username_skip" = "Skip username";
+"username_placeholder" = "Username";
+
+//security
+"security_biometry_reason" = "To log in";
+"security_title" = "Protect your wallet";
+"security_subtitle" = "Add an extra layer of security";
+"security_faceId" = "Use Face ID";
+"security_passcode" = "Set-up Passcode";
+"security_unlock" = "Unlock";
+"security_unlock_description" = "Unlock with passcode or %@";
+"security_touchId" = "Use Touch ID";
+"security_recommended" = "Recommended";
+"security_required" = "At least one option is required";
+"security_create_passcode" = "Create Your passcode";
+"security_repeat_passcode" = "Repeat Your passcode";
+"security_passcode_not_match" = "Passcode does not match";
+
+//settings
+"settings" = "Settings";
+"settings_select_language" = "Select Your Language";
+"settings_add_username" = "+ Add Username";
+"settings_recovery" = "Recovery Phrase";
+"settings_app_lock" = "App Lock";
+"settings_connect_title" = "Connect to Alfacash";
+"settings_connect_subtitle" = "Access to discount and affiliate programs ";
+"settings_currency" = "Local Currency";
+"settings_currency_subtitle" = "Set up the base currency";
+"settings_language" = "Language";
+"settings_notifications" = "Notifications";
+"settings_notifications_subtitle" = "Control your notifications";
+"settings_version" = "Version";
+"settings_legal" = "Legal";
+"settings_faq" = "FAQ/Help";
+"settings_report" = "Report a Problem";
+"settings_sign_out" = "Sign Out of Current Seedphrase";
+"settings_refer" = "Refer & Earn";
+"settings_refer_subtitle" = "Receive 20% of trading fees";
+"settings_profile" = "Profile";
+"settings_security" = "Security";
+"settings_account" = "Alfacash Account";
+"settings_local" = "Local Settings";
+"settings_skins" = "Skins";
+"settings_about" = "About Alfacash Wallet";
+
+//tabBar
+
+"send" = "Send";
+"exchange" = "Exchange";
+"receive" = "Receive";
+
+"wallets" = "Wallets";
+"history" = "History";
+"no_coins" = "No coins found";
+"transfer_coins" = "Transfer coins to get started.";
+
+//recovery phrase
+"recovery_title" = "Recovery Phrase";
+"recovery_description" = "These 12 words are the keys to your wallet. Each word can only be used once. Save this in a safe place and do not share with anyone.";
+"recovery_copy" = "Copy Seed Phrase";
+"recovery_export" = "Export individual private keys";
+"recovery_warning" = " Attention! Do not lose the keys and do not share them with third parties";
+"recovery_back_up" = "Backup to iCloud";
